@@ -1,0 +1,12 @@
+URL: http://localhost:5103/odata/Employees(1)
+
+Response:
+{
+    "@odata.context": "http://localhost:5103/odata/$metadata#Employees/$entity",
+    "Id": 1,
+    "Name": "Simon",
+    "Surname": "Borodin",
+    "Patronymic": "Igorevich",
+    "JobName": "Software developer",
+    "BossId": null
+}

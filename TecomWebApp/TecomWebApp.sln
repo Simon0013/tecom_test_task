@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecomWebApp", "TecomWebApp\TecomWebApp.csproj", "{A6796B41-ACCE-427C-8C9A-82CFD80A216A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6796B41-ACCE-427C-8C9A-82CFD80A216A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6796B41-ACCE-427C-8C9A-82CFD80A216A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6796B41-ACCE-427C-8C9A-82CFD80A216A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6796B41-ACCE-427C-8C9A-82CFD80A216A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C28271FE-9C13-4957-A166-6CB934481310}
+	EndGlobalSection
+EndGlobal

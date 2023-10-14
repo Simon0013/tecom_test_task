@@ -1,0 +1,27 @@
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="TecomWebApp.Models" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityType Name="Employee">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="Surname" Type="Edm.String" Nullable="false" />
+        <Property Name="Patronymic" Type="Edm.String" />
+        <Property Name="JobName" Type="Edm.String" Nullable="false" />
+        <Property Name="BossId" Type="Edm.Int64" />
+        <NavigationProperty Name="Boss" Type="TecomWebApp.Models.Employee" />
+        <NavigationProperty Name="InverseBoss" Type="Collection(TecomWebApp.Models.Employee)" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace="Default" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="Container">
+        <EntitySet Name="Employees" EntityType="TecomWebApp.Models.Employee">
+          <NavigationPropertyBinding Path="Boss" Target="Employees" />
+          <NavigationPropertyBinding Path="InverseBoss" Target="Employees" />
+        </EntitySet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
